@@ -14,6 +14,7 @@ end
 
 def add_supply_to_memorial_day(holiday_hash, supply)
   holiday_hash.each do |season, holidays|
+    binding.pry
     holidays[:memorial_day] << supply if holidays.include?(:memorial_day)
   end
 end
